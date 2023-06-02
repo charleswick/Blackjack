@@ -5,7 +5,7 @@ public class Card {
     public String name;
     public Boolean isDealt;
 
-    public Card(int pSuit, int pName){
+    public Card(int pName, int pSuit){
         if (pSuit == 0){
             suit = "diamonds";
 
@@ -90,9 +90,8 @@ public class Card {
         isDealt=false;
 
 
-
-
-
-
+    }
+    public void printCard(){
+        System.out.println("There is a " +name+" of "+suit+" which has a value of "+value);
     }
 }
