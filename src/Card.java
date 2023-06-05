@@ -4,6 +4,9 @@ public class Card {
     public int value;
     public String name;
     public Boolean isDealt;
+    public Boolean isShuffled;
+
+
 
     public Card(int pName, int pSuit){
         if (pSuit == 0){
@@ -88,6 +91,7 @@ public class Card {
             value=10;
         }
         isDealt=false;
+        isShuffled=false;
 
 
     }
